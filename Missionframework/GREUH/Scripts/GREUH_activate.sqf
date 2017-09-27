@@ -6,9 +6,9 @@ desiredviewdistance_inf = viewDistance;
 desiredviewdistance_veh = viewDistance;
 desiredviewdistance_obj = 75;
 desired_fps = 0;
-show_teammates = false;
-show_nametags = false;
-show_platoon = false;
+show_teammates = true;
+show_nametags = true;
+show_platoon = true;
 desired_vehvolume = 100;
 
 greuh_options_profile = profileNamespace getVariable "GREUH_OPTIONS_PROFILE";

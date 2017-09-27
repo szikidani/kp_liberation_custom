@@ -1,4 +1,4 @@
-enableSaving [ false, false ];
+enableSaving [ true, true ];
 
 if (isDedicated) then {debug_source = "Server";} else {debug_source = name player;};
 

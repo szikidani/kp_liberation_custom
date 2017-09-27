@@ -52,7 +52,7 @@ KP_liberation_fuel_max = 45;
 Name of the savegame namespace inside of the [ServerProfileName].vars.Arma3Profile file.	*/
 GRLIB_save_key = "KP_LIBERATION_" + (toUpper worldName) + "_SAVEGAME";
 
-KP_liberation_savegame_debug = false;																			// Enables displaying of the whole save array in the server log on each save
+KP_liberation_savegame_debug = true;																			// Enables displaying of the whole save array in the server log on each save
 
 GRLIB_side_friendly = WEST;																						// Friendly side.
 GRLIB_side_enemy = EAST;																						// Enemy side.
@@ -65,10 +65,10 @@ GRLIB_color_enemy = "ColorOPFOR";																				// Enemy sector marker colo
 GRLIB_color_enemy_bright = "ColorRED";																			// Enemy sector marker color (activated).
 
 GRLIB_fob_range = 125;																							// Build range around the main FOB building.
-GRLIB_halo_altitude = 2500;																						// Altitude in metres for the HALO jump.
+GRLIB_halo_altitude = 1250;																						// Altitude in metres for the HALO jump.
 GRLIB_secondary_missions_costs = [15, 10, 8];																	// Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
 GRLIB_secondary_objective_impact = 0.6;																			// The percentage impact against enemy combat readiness for a successful FOB hunt.
-GRLIB_recycling_percentage = 0.5;																				// Percentage of resources you get back from recycling.
+GRLIB_recycling_percentage = 1;																				// Percentage of resources you get back from recycling.
 KP_liberation_production_interval = 45				/ GRLIB_resources_multiplier;								// Time in minutes until a production process is finished, when resources multiplier is set to 1.
 
 GRLIB_sector_size = 1000;																						// Range to activate a sector.
@@ -77,9 +77,9 @@ GRLIB_defended_buildingpos_part = 0.4;																			// Multiplier for defen
 GRLIB_battlegroup_size = 6							* (sqrt GRLIB_unitcap) * (sqrt GRLIB_csat_aggressivity);	// Size of enemy battlegroups.
 GRLIB_vulnerability_timer = 1200;																				// Time in seconds how long a captured sector is vulnerable to enemy troops.
 GRLIB_radiotower_size = 2500;																					// Radio Tower scanning range.
-GRLIB_surrender_chance = 80;																					// Chance that enemy infantry will surrender after heavy losses are encountered.
+GRLIB_surrender_chance = 90;																					// Chance that enemy infantry will surrender after heavy losses are encountered.
 
-GRLIB_civilians_amount = 10 						* GRLIB_civilian_activity;									// Civilian count multiplier.
+GRLIB_civilians_amount = 2 						* GRLIB_civilian_activity;									// Civilian count multiplier.
 GRLIB_cleanup_delay = 1200;																						// Time in seconds until bodies of dead soldiers are cleaned up.
 
 GRLIB_blufor_cap = 100								* GRLIB_unitcap;											// Cap for BLUFOR.
@@ -90,7 +90,7 @@ GRLIB_patrol_cap = 150								* GRLIB_unitcap;											// Cap for enemy patrol
 /* - Default arsenal blacklist method.
 Useless if you're using anything other than "kp_liberation_arsenal = 0;" above. A whitelisted arsenal is always more performance friendly then a blacklisted arsenal.	
 REMEMBER: All static turret and UAV bags should be defined here, to stop players from exploiting free resources via the virtual arsenal.	*/
-blacklisted_from_arsenal = [
+/*blacklisted_from_arsenal = [
 	"B_Respawn_Sleeping_bag_blue_F",
 	"B_Respawn_Sleeping_bag_brown_F",
 	"B_Respawn_TentDome_F",
@@ -164,6 +164,8 @@ blacklisted_from_arsenal = [
 	"optic_Nightstalker",
 	"optic_tws",
 	"optic_tws_mg"
+];*/
+blacklisted_from_arsenal = [
 ];
 
 // Items which should be added as allowed Items, when they get blacklisted, even if they are not in the blacklisted_from_arsenal array
@@ -191,8 +193,6 @@ box_transport_config = [
 	["C_Truck_02_covered_F", -6.5, [0,0.3,0.05], [0,-1.3,0.05], [0,-2.9,0.05]],
 	["RHS_Ural_Open_Civ_03", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
 	["RHS_Ural_Civ_03", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
-	["RHS_Ural_Open_MSV_01", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
-	["RHS_Ural_MSV_01", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
 	["LOP_TAK_Civ_Ural_open", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
 	["LOP_TAK_Civ_Ural", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
 	["B_Truck_01_transport_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],

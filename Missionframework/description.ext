@@ -1,13 +1,13 @@
 respawn = 3;
-respawndelay = 5;
+respawndelay = 3;
 respawnButton = 1;
 disabledAI = true;
 
 enableDebugConsole = 1;
-allowFunctionsLog = 0;
+allowFunctionsLog = 1;
 
 loadScreen="res\liberation.jpg";
-onLoadMission = "www.killahpotatoes.de";
+onLoadMission = "www.cring.eu";
 author = "[GREUH] Zbug, [GREUH] McKeewa, [KP] Wyqer";
 onLoadName = $STR_MISSION_TITLE;
 

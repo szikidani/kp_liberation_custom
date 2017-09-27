@@ -42,8 +42,8 @@ infantry_units = [
 	["B_Sharpshooter_F",40,0,0],										//Sharpshooter
 	["B_soldier_AT_F",50,10,0],											//AT Specialist
 	["B_soldier_AA_F",50,10,0],											//AA Specialist
-	["B_medic_F",30,0,0],												//Combat Life Saver
-	["B_engineer_F",30,0,0],											//Engineer
+	["B_medic_F",0,0,0],												//Combat Life Saver
+	["B_engineer_F",0,0,0],												//Engineer
 	["B_soldier_exp_F",30,0,0],											//Explosives Specialist
 	["B_recon_F",20,0,0],												//Recon Scout
 	["B_recon_LAT_F",30,0,0],											//Recon Scout (AT)
@@ -56,15 +56,21 @@ infantry_units = [
 	["B_ghillie_lsh_F",70,5,0],											//Sniper (Lush)
 	["B_ghillie_sard_F",70,5,0],										//Sniper (Semi-Arid)
 	["B_spotter_F",20,0,0],												//Spotter
-	["B_crew_F",10,0,0],												//Crewman
+	["B_crew_F",0,0,0],													//Crewman
 	["B_soldier_PG_F",20,0,0],											//Para Trooper
-	["B_helicrew_F",10,0,0],											//Helicopter Crew
-	["B_Helipilot_F",10,0,0],											//Helicopter Pilot
-	["B_Pilot_F",10,0,0]												//Pilot
+	["B_helicrew_F",0,0,0],												//Helicopter Crew
+	["B_Helipilot_F",0,0,0],											//Helicopter Pilot
+	["B_Pilot_F",0,0,0],												//Pilot
+	["B_GEN_Commander_F",0,0,0],										//Gendermarine Commander
+	["B_GEN_Soldier_F",0,0,0]											//Gendermarine Soldier
 ];
 
 light_vehicles = [
-	["B_Quadbike_01_F",50,0,25],										//Quad Bike
+	["C_Van_02_transport_F",0,0,0],									
+	["C_Van_02_service_F",0,0,0],										
+	["C_Van_02_vehicle_F",0,0,0],										
+	["C_Van_02_medevac_F",0,0,0],										
+	["B_Quadbike_01_F",0,0,0],											//Quad Bike
 	["B_LSV_01_unarmed_F",75,0,50],										//Prowler
 	["B_LSV_01_armed_F",75,40,50],										//Prowler (HMG)
 	["B_MRAP_01_F",100,0,50],											//Hunter
@@ -158,18 +164,23 @@ air_vehicles = [
 	["B_Plane_Fighter_01_Stealth_F",1500,1750,450],						//F/A-181 Black Wasp II (Stealth)
 	["B_T_VTOL_01_armed_F",750,1500,500],								//V-44 X Blackfish (Armed)
 	["B_T_VTOL_01_infantry_F",750,0,500],								//V-44 X Blackfish (Infantry)
-	["B_T_VTOL_01_vehicle_F",750,0,500]									//V-44 X Blackfish (Vehicle)
+	["B_T_VTOL_01_vehicle_F",750,0,500],								//V-44 X Blackfish (Vehicle)
+	["B_Deck_Crew_F",750,0,500],										//V-44 X Blackfish (Vehicle)
+	["B_Fighter_Pilot_F",750,0,500]										//V-44 X Blackfish (Vehicle)
 ];
 
 static_vehicles = [
-	["B_HMG_01_A_F",25,40,0],											//Mk30A HMG .50
-	["B_HMG_01_high_F",25,40,0],										//Mk30 HMG .50 (Raised)
-	["B_GMG_01_A_F	",25,60,0],											//Mk32A GMG 20mm
-	["B_GMG_01_high_F",25,60,0],										//Mk32 GMG 20mm (Raised)
-	["B_static_AT_F",50,100,0],											//Static TTitan Launcher (AT)
-	["B_static_AA_F",50,100,0],											//Static Titan Launcher (AA)
-	["B_Mortar_01_F",80,150,0],											//Mk6 Mortar
-	["RHS_M119_WD",100,200,0]											//M119A2
+	["B_HMG_01_A_F",0,5,0],												//Mk30A HMG .50
+	["B_HMG_01_high_F",0,5,0],											//Mk30 HMG .50 (Raised)
+	["B_GMG_01_A_F	",0,5,0],											//Mk32A GMG 20mm
+	["B_GMG_01_high_F",0,5,0],											//Mk32 GMG 20mm (Raised)
+	["B_static_AT_F",0,5,0],											//Static TTitan Launcher (AT)
+	["B_static_AA_F",0,5,0],											//Static Titan Launcher (AA)
+	["B_AAA_System_01_F",0,0,0],										//
+	["B_SAM_System_01_F",0,0,0],										//
+	["B_SAM_System_02_F",0,0,0],										//
+	["B_Mortar_01_F",0,5,0],											//Mk6 Mortar
+	["RHS_M119_WD",0,5,0]												//M119A2
 ];
 
 buildings = [
@@ -252,8 +263,8 @@ buildings = [
 ];
 
 support_vehicles = [
-	[Arsenal_typename,100,200,0],
-	[Respawn_truck_typename,200,0,100],
+	[Arsenal_typename,0,0,0],
+	[Respawn_truck_typename,0,0,0],
 	[FOB_box_typename,300,500,0],
 	[FOB_truck_typename,300,500,75],
 	[KP_liberation_small_storage_building,0,0,0],
